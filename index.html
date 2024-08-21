@@ -24,28 +24,10 @@
             <p>Have questions? <a href="mailto:contact@yashh.me">Contact Me</a></p>
         </footer>
     </div>
-<footer>
-    <button class="play-button" id="playButton">Play Music</button>
-    <audio id="bgm">
-        <source src="spotifydown.com - Stranger Things.mp3
-" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</footer>
-
-<script>
-    document.getElementById('playButton').addEventListener('click', function() {
-        var audio = document.getElementById('bgm');
-        if (audio.paused) {
-            audio.play();
-            this.textContent = 'Pause Music'; // Change button text to "Pause Music"
-        } else {
-            audio.pause();
-            this.textContent = 'Play Music'; // Change button text to "Play Music"
-        }
-    });
-</script>
-
+<audio id="bgm" autoplay loop>
+    <source src="spotifydown.com - Stranger Things.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 </body>
 </html>
